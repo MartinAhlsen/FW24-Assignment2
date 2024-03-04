@@ -21,6 +21,10 @@ header {
     margin-top: 24px;
 }
 
+header>.header-home {
+    flex-grow: 1;
+}
+
 header>hr {
     width: 80%;
 }
