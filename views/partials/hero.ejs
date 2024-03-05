@@ -1,6 +1,6 @@
 <% if (locals.hero) { %>
-    <div class="hero-container">
-        <span><%= type %></span>
-        <img class="hero" src="<%= locals.hero %>" alt="">
-    </div>
-<% } %>
+  <!-- Sorry about the inline styling! -->
+  <div class="hero-container" style="background-image: url('<%= locals.hero %>');">
+    <h2><%= type %></h2>
+  </div>
+  <% } %>
