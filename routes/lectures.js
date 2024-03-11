@@ -19,12 +19,12 @@ lecturesRouter.get("/", (req, res) => {
     )
 })
 
-lecturesRouter.get("/nyborjare", (req,res) => {
+lecturesRouter.get("/grund", (req,res) => {
     res.render(
         "pages/browse",
         {
-            headTitle: "Nybörjare",
-            type: "Nybörjare",
+            headTitle: "Grund",
+            type: "Grund",
             hero: "images/lecture-hero.jpg",
             products: beginnerLectures,
         }

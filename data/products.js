@@ -13,15 +13,15 @@ const short = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae s
 const long = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam beatae et laudantium ratione. Amet laudantium fuga rem animi! Voluptatum, distinctio optio. Quibusdam odit rem error repudiandae vel cum omnis! Delectus.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam beatae et laudantium ratione. Amet laudantium fuga rem animi! Voluptatum, distinctio optio. Quibusdam odit rem error repudiandae vel cum omnis! Delectus.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam beatae et laudantium ratione. Amet laudantium fuga rem animi! Voluptatum, distinctio optio. Quibusdam odit rem error repudiandae vel cum omnis! Delectus.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam beatae et laudantium ratione. Amet laudantium fuga rem animi! Voluptatum, distinctio optio. Quibusdam odit rem error repudiandae vel cum omnis! Delectus.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam beatae et laudantium ratione. Amet laudantium fuga rem animi! Voluptatum, distinctio optio. Quibusdam odit rem error repudiandae vel cum omnis! Delectus.<br>";
 
 export const lectures = [
-    new Product("lecture", "Vintillverkning", "Nybörjare", "300 kr", "./images/winemaking.png"),
+    new Product("lecture", "Vintillverkning", "Grund", "300 kr", "./images/winemaking.png"),
     new Product("lecture", "Italiens regioner", "Avancerad", "400 kr", "./images/italy.jpg"),
     new Product("lecture", "Fransk vinlagstiftning", "Expert", "500 kr", "./images/french-flag.jpg")
 ]
 
 export const beginnerLectures = [
-    new Product("lecture", "Hur vin blir till", "Nybörjare", "300kr", "./images/winemaking.png"),
-    new Product("lecture", "Våra vanligaste röda druvor", "Nybörjare", "300kr", "./images/winemaking.png"),
-    new Product("lecture", "Våra vanligaste gröna druvor", "Nybörjare", "300 kr", "./images/winemaking.png")
+    new Product("lecture", "Hur vin blir till", "Grund", "300kr", "./images/winemaking.png"),
+    new Product("lecture", "Våra vanligaste röda druvor", "Grund", "300kr", "./images/winemaking.png"),
+    new Product("lecture", "Våra vanligaste gröna druvor", "Grund", "300 kr", "./images/winemaking.png")
 ]
 export const advancedLectures = [
     new Product("lecture", "Pinot Noir - en världsomsegling", "Avancerad", "450 kr", "./images/winemaking.png"),
@@ -36,15 +36,15 @@ export const expertLectures = [
 ]
 
 export const tastings = [
-    new Product("tasting", "Rött vin", "Nybörjare", "300 kr", "./images/red-wine.jpg"),
+    new Product("tasting", "Rött vin", "Grund", "300 kr", "./images/red-wine.jpg"),
     new Product("tasting", "Vitt vin", "Avancerad", "400 kr", "./images/white-wine.jpg"),
     new Product("tasting", "Champagne", "Expert", "500 kr", "./images/champagne.jpg")
 ]
 
 export const beginnerTastings = [
-    new Product("tasting", "Rött vin - En introduktion", "Nybörjare", "300 kr", "./images/red-wine.jpg"),
-    new Product("tasting", "Vitt vin - En introduktion", "Nybörjare", "300 kr", "./images/red-wine.jpg"),
-    new Product("tasting", "Mousserande vin - En introduktion", "Nybörjare", "300 kr", "./images/red-wine.jpg"),
+    new Product("tasting", "Rött vin - En introduktion", "Grund", "300 kr", "./images/red-wine.jpg"),
+    new Product("tasting", "Vitt vin - En introduktion", "Grund", "300 kr", "./images/red-wine.jpg"),
+    new Product("tasting", "Mousserande vin - En introduktion", "Grund", "300 kr", "./images/red-wine.jpg"),
 ]
 export const advancedTastings = [
     new Product("tasting", "Syrah eller Shiraz?", "Avancerad", "400 kr", "./images/white-wine.jpg"),
