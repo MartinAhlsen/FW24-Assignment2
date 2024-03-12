@@ -18,8 +18,8 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-// app.use("/tastings", tastingsRouter);
-// app.use("/lectures", lecturesRouter);
+app.use("/tastings", tastingsRouter);
+app.use("/lectures", lecturesRouter);
 
 app.listen(port, () => {
     console.log(`Port: ${port}`)

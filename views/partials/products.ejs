@@ -1,0 +1,18 @@
+<% if (locals.products) { %>
+    <div class="product-wrapper">
+        <% locals.products.forEach(element => { %>
+            <div class="card">
+                <div class="image-wrapper">
+                    <img class="icon" src="<%= element.img %>" alt="">
+                </div>
+                <div class="text-wrapper">
+                    <h3 class="product-title"><%= element.name %></h3>
+                    <p class="description"><%= element.descriptionShort %></p>
+                    <span class="price"><%= element.price %></span>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    <% } else { %>
+        <%- console.log("No products") %>
+     <% } %>
