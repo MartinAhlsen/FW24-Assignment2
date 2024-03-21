@@ -53,6 +53,6 @@ export const advancedTastings = [
 ]
 export const expertTastings = [
     new Product("tasting", "Champagne", "Expert", "500 kr", "./images/champagne.jpg"),
-    new Product("tasting", "Bordeax vs Napa Valley", "Expert", "700 kr", "./images/white-wine.jpg"),
+    new Product("tasting", "Bordeaux vs Napa Valley", "Expert", "700 kr", "./images/white-wine.jpg"),
     new Product("tasting", "Riesling i sitt esse", "Expert", "600 kr", "./images/white-wine.jpg")
 ]

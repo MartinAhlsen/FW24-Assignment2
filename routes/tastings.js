@@ -15,16 +15,17 @@ tastingsRouter.get("/", (req, res) => {
             type: "Provningar",
             hero: "images/tasting-hero.webp",
             products: tastings,
+            level: "Grund"
         }
     )
 });
 
-tastingsRouter.get("/nyborjare", (req,res) => {
+tastingsRouter.get("/grund", (req,res) => {
     res.render(
-        "pages.browse",
+        "pages/browse",
         {
-            headTitle: "Nybörjare",
-            type: "Nybörjare",
+            headTitle: "Grund",
+            type: "Grund",
             hero: "images/lecture-hero.jpg",
             products: beginnerTastings,
         }
@@ -33,10 +34,10 @@ tastingsRouter.get("/nyborjare", (req,res) => {
 
 tastingsRouter.get("/avancerad", (req,res) => {
     res.render(
-        "pages.browse",
+        "pages/browse",
         {
             headTitle: "Avancerad",
-            type: "Avancerad",
+            type: ["Avancerad", "Provninagr"],
             hero: "images/lecture-hero.jpg",
             products: advancedTastings,
         }
@@ -45,7 +46,7 @@ tastingsRouter.get("/avancerad", (req,res) => {
 
 tastingsRouter.get("/expert", (req,res) => {
     res.render(
-        "pages.browse",
+        "pages/browse",
         {
             headTitle: "Expert",
             type: "Expert",
