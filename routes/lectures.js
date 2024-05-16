@@ -21,36 +21,39 @@ lecturesRouter.get("/", (req, res) => {
 
 lecturesRouter.get("/grund", (req,res) => {
     res.render(
-        "pages/browse",
+        "pages/product",
         {
             headTitle: "Grund",
             type: "Grund",
             hero: "images/lecture-hero.jpg",
             products: beginnerLectures,
+            heading: "Föreläsningar på grundnivå",
         }
     )
 })
 
 lecturesRouter.get("/avancerad", (req,res) => {
     res.render(
-        "pages/browse",
+        "pages/product",
         {
             headTitle: "Avancerad",
             type: "Avancerad",
             hero: "images/lecture-hero.jpg",
             products: advancedLectures,
+            heading: "Föreläsningar på avancerad nivå",
         }
     )
 })
 
 lecturesRouter.get("/expert", (req,res) => {
     res.render(
-        "pages/browse",
+        "pages/product",
         {
             headTitle: "Expert",
             type: "Expert",
             hero: "images/lecture-hero.jpg",
             products: expertLectures,
+            heading: "Föreläsningar på expertnivå",
         }
     )
 })

@@ -22,36 +22,42 @@ tastingsRouter.get("/", (req, res) => {
 
 tastingsRouter.get("/grund", (req,res) => {
     res.render(
-        "pages/browse",
+        "pages/product",
         {
             headTitle: "Grund",
             type: "Grund",
             hero: "images/lecture-hero.jpg",
             products: beginnerTastings,
+            heading: "Provningar på grundnivå",
+
         }
     )
 })
 
 tastingsRouter.get("/avancerad", (req,res) => {
     res.render(
-        "pages/browse",
+        "pages/product",
         {
             headTitle: "Avancerad",
-            type: ["Avancerad", "Provninagr"],
+            type: "Avancerad",
             hero: "images/lecture-hero.jpg",
             products: advancedTastings,
+            heading: "Provningar på avancerad nivå",
+
         }
     )
 })
 
 tastingsRouter.get("/expert", (req,res) => {
     res.render(
-        "pages/browse",
+        "pages/product",
         {
             headTitle: "Expert",
             type: "Expert",
             hero: "images/lecture-hero.jpg",
             products: expertTastings,
+            heading: "Provningar på expertnivå",
+
         }
     )
 })

@@ -12,10 +12,12 @@
          <link rel="stylesheet" href="styles/lectures.css">
         <% } %>
     <% } %>
-    <% if (locals.level === "Grund" || locals.level === "Avancerad" || locals.level === "Expert") { %>
-        <link rel="stylesheet" href="styles/product.css">
+    <% if (locals.type === "Grund" || locals.type === "Avancerad" || locals.type === "Expert") { %>
+        <link rel="stylesheet" href="../styles/product.css">
+        <link rel="stylesheet" href="../styles/global.css" />
+
     <% } %>
     <% if (locals.hero) { %>
-        <link rel="stylesheet" href="styles/hero.css">
+        <link rel="stylesheet" href="./styles/hero.css">
     <% } %>
 </head>

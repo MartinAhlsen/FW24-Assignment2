@@ -1,19 +1,20 @@
 <% if (locals.products) { %>
     <div class="product-wrapper">
-        <% locals.products.forEach(element => { %>
-            <div class="card"><a href="/<%= element.type %>/<%= element.level %>">
+        <% locals.products.forEach((element, index) => { %>
+            <% const flexDirectionClass = index % 2 === 0 ? "even" : "odd"; %>
+            <div class="card"><a class="<%= flexDirectionClass %>" href="/<%= element.type %>/<%= element.level %>">
                 <div class="image-wrapper">
                     <img class="icon" src="<%= element.img %>" alt="">
                 </div>
-                <div class="text-wrapper">
-                    <h3 class="product-title"><%= element.name %></h3>
-                    <p class="description"><%= element.descriptionShort %></p>
-                    <span class="price"><%= element.price %></span>
+                <div class="text-wrapper <%= flexDirectionClass %>">
+                    <h3 class="product-title <%= flexDirectionClass %>"><%= element.name %></h3>
+                    <p class="description <%= flexDirectionClass %>"><%= element.descriptionShort %></p>
+                    <span class="price <%= flexDirectionClass %>"><%= element.price %></span>
                 </div>
             </a>
             </div>
-            <% }) %>
+            <% }); %>
         </div>
     <% } else { %>
         <%- console.log("No products") %>
-     <% } %>
+    <% } %>
