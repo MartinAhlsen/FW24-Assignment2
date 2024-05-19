@@ -9,7 +9,12 @@ const __dirname = path.resolve();
 
 app.get("/", (req, res) => {
     res.render("pages/home",{
+        pageName: "home",
         headTitle: "Utanför boxen",
+        type: "Utanför Boxen",
+        hero: " ",
+        subtitle: "Platsen för dig att bredda dina kunskaper om vin",
+        subSubtitle: "Vem du än är"
     })
 })
 

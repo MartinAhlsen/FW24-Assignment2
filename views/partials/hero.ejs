@@ -1,11 +1,21 @@
 <% if (locals.hero) { %>
-  <!-- Sorry about the inline styling! -->
-  <div class="hero-container" style="background-image: url('<%= locals.hero %>');">
+  <div 
+  class="hero-container <% if (locals.headTitle === "Utanför boxen") { %>home<% } %>" 
+  style="background-image: url('<%= locals.hero %>');">
     <% if (locals.heading) { %>
      <h2 class="heading"><%= heading %></h2>
      <hr class="lower-hr">
     <% } else { %>
     <h2><%= type %></h2>
     <% } %>
+    <% if (locals.subtitle) { %>
+      <div class="subtitle">
+        <h3><%= subtitle %></h3>
+        <% if (locals.subSubtitle) { %>
+          <h3><%= subSubtitle %></h3>
+         <% } %>
+      </div>
+    <% } %>
+
   </div>
   <% } %>

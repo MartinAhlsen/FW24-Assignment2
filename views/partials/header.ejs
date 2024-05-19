@@ -1,7 +1,12 @@
-<header>
+<header
+ <% if (locals.pageName === "home") { %>
+    style="color: white; text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);"
+<% } %>>
   <a class="header-home" href="/">
-    <h1>Utanför boxen</h1>
+    <h1 class="main-heading">Utanför boxen</h1>
   </a>
   <%- include('../partials/nav') %>
-  <hr />
+  <hr <% if (locals.pageName === "home") { %>
+    style="color: white;"
+  <% } %>/>
 </header>

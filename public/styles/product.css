@@ -1,7 +1,5 @@
-/* .product-wrapper*/
-
-a.even,
-a.odd {
+.card.even,
+.card.odd {
     display: flex;
     align-items: center;
 }
@@ -45,11 +43,11 @@ a.odd {
     padding-left: 32px;
 }
 
-a.even {
+.card.even {
     flex-direction: row;
 }
 
-a.odd {
+.card.odd {
     flex-direction: row-reverse;
 }
 
@@ -59,4 +57,33 @@ a.odd {
 
 .heading {
     text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+
+    .card.card.even,
+    .card.odd {
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 24px;
+    }
+
+    .text-wrapper.odd,
+    .text-wrapper.even {
+        padding-bottom: 0;
+        height: unset;
+    }
+
+    .card::after {
+        content: "";
+        display: block;
+        width: 90%;
+        height: 1px;
+        background-color: black;
+        margin-top: 24px;
+    }
+
+    /* img.icon {
+        height: 300px;
+    } */
 }

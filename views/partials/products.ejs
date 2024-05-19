@@ -2,7 +2,7 @@
     <div class="product-wrapper">
         <% locals.products.forEach((element, index) => { %>
             <% const flexDirectionClass = index % 2 === 0 ? "even" : "odd"; %>
-            <div class="card"><a class="<%= flexDirectionClass %>" href="/<%= element.type %>/<%= element.level %>">
+            <div class="card <%= flexDirectionClass %>">
                 <div class="image-wrapper">
                     <img class="icon" src="<%= element.img %>" alt="">
                 </div>
@@ -11,7 +11,6 @@
                     <p class="description <%= flexDirectionClass %>"><%= element.descriptionShort %></p>
                     <span class="price <%= flexDirectionClass %>"><%= element.price %></span>
                 </div>
-            </a>
             </div>
             <% }); %>
         </div>

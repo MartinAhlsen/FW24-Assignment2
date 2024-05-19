@@ -9,8 +9,9 @@ const lecturesRouter = express.Router();
 
 lecturesRouter.get("/", (req, res) => {
     res.render(
-        "pages/browse",
+        "pages/categories",
         {
+            pageName: "föreläsningar",
             headTitle: "Föreläsningar",
             type: "Föreläsningar",
             hero: "images/lecture-hero.jpg",

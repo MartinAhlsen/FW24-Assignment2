@@ -9,8 +9,9 @@ const tastingsRouter = express.Router()
 
 tastingsRouter.get("/", (req, res) => {
     res.render(
-        "pages/browse",
+        "pages/categories",
         {
+            pageName: "provningar",
             headTitle: "Provningar",
             type: "Provningar",
             hero: "images/tasting-hero.webp",

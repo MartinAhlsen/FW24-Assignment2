@@ -6,8 +6,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.hero-container>h2 {
+.hero-container>h2,
+.subtitle>h3 {
     color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.hero-container.home {
+    display: flex;
+    flex-grow: 1;
 }

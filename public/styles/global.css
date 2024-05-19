@@ -14,6 +14,23 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+}
+
+.landingpage {
+    background-image: url("../images/champagne-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    opacity: 0.9;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -21,12 +38,17 @@ header {
     margin-top: 24px;
 }
 
+
 header>.header-home {
     flex-grow: 1;
 }
 
+.header-home>h1 {
+    min-width: 263px;
+}
+
 header>hr {
-    width: 80%;
+    width: 90%;
 }
 
 h1 {
@@ -50,6 +72,11 @@ nav>ul {
     padding: 0;
     list-style: none;
     flex-grow: 1;
+    margin-bottom: 0px;
+}
+
+.list-item {
+    padding: 0 8px;
 }
 
 a:link {
@@ -70,4 +97,45 @@ a:visited {
 .lower-hr {
     width: 20%;
     margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-heading {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav {
+        margin-right: unset;
+    }
+
+    .nav-list {
+        justify-content: space-evenly;
+    }
+
+    .product-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-wrapper {
+        flex-basis: unset;
+    }
+
+    .text-wrapper.even,
+    .text-wrapper.odd {
+        align-items: unset;
+        padding: 16px 16px 0 16px;
+        flex-basis: unset;
+    }
+
+    .description.odd {
+        text-align: unset;
+    }
 }
